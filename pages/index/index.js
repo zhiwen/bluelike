@@ -8,7 +8,7 @@ Page({
     duration: 500,
     exitState:{},
     setInter: '',
-    welcomeInterval:3000,//10 secs
+    welcomeInterval:10000,//10 secs
     welcomeMemberIdx: 0,
     memberList :[
       "Zhiwen",
