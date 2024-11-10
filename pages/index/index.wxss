@@ -1,0 +1,78 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea-x {
+  flex: 1;
+  overflow-y: hidden;
+  height: 230px;
+}
+
+.scrollarea-y {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.tips-want-row {
+  padding-top: 1px;
+}
+
+.van-grid-item .van-grid-item__content {
+  padding: var(--grid-item-content-padding,8px 8px);
+}
+
+.province-image {
+  width:120rpx;
+  height:120rpx;
+}
+
+.province-name {
+  color:#333333;
+  padding-top:5px;
+  font-size:12px;
+}
+
+.group-avatar {
+  width:120rpx;
+  height:120rpx;
+  padding-left:8px;
+}
+
+.group-reddot {
+  width: 10px;
+  height: 10px;
+  color: #fff;
+  position:absolute;
+  z-index: 100;
+  left: 68px;
+  background-color: #f00;
+  border-radius: 50%;
+}
+
+.van-notice-bar {
+  font-size: var(--notice-bar-font-size,14px);
+  padding: var(--notice-bar-padding,0 10px);
+}
+
+.group-name .van-notice-bar {
+  background-color: #ffffff;
+  color: rgb(53, 52, 52);
+  font-weight: 600;
+  font-size: var(--notice-bar-font-size,15px);
+  padding: 0 0 0 6px;
+  height:var(--notice-bar-height,40px);
+}
+
+.group-message .van-notice-bar {
+  background-color: #ffffff;
+  color: #b6b3b3;
+  font-size: var(--notice-bar-font-size,13px);
+  height:var(--notice-bar-height,20px);
+  padding: 0 0 0 6px;
+}
+.group-button {
+  padding: 0 0 0 6px;
+  position:inherit;
+}
