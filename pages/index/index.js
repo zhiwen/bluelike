@@ -61,41 +61,41 @@ Page({
   getPagedProvinceList: function () {
     var provinceList = DSProvince.provinceList;
     provinceList.forEach(itm => {
-      if(utils.isBlankString(itm.imgUrl)) {
+      if (utils.isBlankString(itm.imgUrl)) {
         itm.imgUrl = utils.getRandomData(DSProvince.provinceAvatars);
       }
     })
 
     var sortedPList = provinceList.sort(utils.arraySortingDesc);
     var pagedPList = utils.arrayListPagination(sortedPList, 10);
-    
+
     return pagedPList;
   },
 
   getGroupList: function (provinceCode) {
     var filterGroupList = DSCityGroup.cityGroupList.filter(item => item.province == provinceCode);
-    filterGroupList.forEach(itm => {
+    filterGroupList.forEach((itm, idx) => {
       // var newItm = { ...itm };
-      
+
       // 随机生成小红点
-      if(utils.isBlankString(itm.reddot)) {
-        var rndIdx = utils.generateRandomIdx(filterGroupList.length);
-        itm.reddot = ((rndIdx % 2) == 0 || filterGroupList.length == 1);
+      if (utils.isBlankString(itm.reddot)) {
+        var rndIdx = utils.generateRandomIdx(filterGroupList.length / 2);
+        itm.reddot = (idx <= 1 || (rndIdx % 2) == 0);
       }
 
       //全国搭子群名不自动生成
-      if(itm.province != 10) {
+      if (itm.province != 10) {
         var groupName = DSGroupInfo.groupInfo.groupNames[0];
-        if(itm.name.indexOf(groupName) <0) {
+        if (itm.name.indexOf(groupName) < 0) {
           itm.name = itm.name + groupName;
         }
       }
 
-      if(utils.isBlankString(itm.imgUrl)) {
+      if (utils.isBlankString(itm.imgUrl)) {
         itm.imgUrl = utils.getRandomData(DSCityGroup.cityGroupAvatars);
       }
 
-      if(utils.isBlankString(itm.message)) {
+      if (utils.isBlankString(itm.message)) {
         var msg = utils.getRandomData(DSGroupInfo.groupInfo.messages);
         var member = utils.getRandomData(DSGroupInfo.groupInfo.members);
         itm.message = msg.replace("${name}", member);

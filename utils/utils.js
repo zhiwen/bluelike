@@ -6,7 +6,7 @@ module.exports = {
 }
 
 function isBlankString(value) {
-  return value == undefined || value == "" || value == '' || value.length == 0;
+  return value == undefined || value === "" || value === '' || value.length == 0;
 }
 
 function generateRandomIdx(len) {
