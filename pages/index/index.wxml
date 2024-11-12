@@ -54,7 +54,7 @@
       <view class="group-reddot" hidden="{{!g.reddot}}" />
       <image class="group-avatar" src="{{g.imgUrl}}" />
     </van-col>
-    <van-col span="14"> 
+    <van-col span="15"> 
       <van-notice-bar class="group-name"
         scrollable="{{ false }}"
         text="{{g.name}}"
@@ -65,7 +65,7 @@
         text="{{g.message}}"
       />
     </van-col>
-    <van-col span="5">
+    <van-col span="4">
       <van-button 
       class="group-button"
       plain hairline
