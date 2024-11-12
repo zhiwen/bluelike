@@ -1,14 +1,14 @@
 <!--index.wxml-->
-<navigation-bar title="同城高质量搭子组局群" back="{{false}}" color="black" background="#2A8CE5"></navigation-bar>
+<navigation-bar title="彩虹男孩同城搭子组局群" back="{{false}}" color="black" background="#2A8CE5"></navigation-bar>
   <van-row>
     <van-col span="24">
       <van-notice-bar
         left-icon="volume-o"
-        color="red"
+        color="blue"
         background="rgb(219, 232, 248)"
         scrollable
       >
-      欢迎 {{memberList[welcomeMemberIdx]}} 加入同城群聊
+      {{appNotice}}
       </van-notice-bar>
     </van-col>
   </van-row>
@@ -17,8 +17,9 @@
       <van-notice-bar
         scrollable="{{false}}"
         left-icon="info"
-        background="rgb(247, 239, 230)"
-        text="1. 关注喜欢的群；2.加入粉群；3.关注群消息"
+        background="#eeeeee"
+        color="#7a7a7a"
+        text="1.关注；   2.进粉丝群；   3.留意群消息"
       />
     </van-col>
   </van-row>
@@ -48,7 +49,7 @@
   </van-row>
 
 <scroll-view class="scrollarea-y" scroll-y="true" type="list">
-  <van-row wx:for="{{groupList[pcode]}}" wx:for-index="idx" wx:key="j" wx:for-item="g">
+  <van-row wx:for="{{groupList}}" wx:for-index="idx" wx:key="j" wx:for-item="g">
     <van-col span="5">
       <view class="group-reddot" hidden="{{!g.reddot}}" />
       <image class="group-avatar" src="{{g.imgUrl}}" />
@@ -67,7 +68,8 @@
     <van-col span="5">
       <van-button 
       class="group-button"
-      type="danger" size="small" round>加群</van-button>
+      plain hairline
+      type="warning" size="small" round>加群</van-button>
     </van-col>
   </van-row>
 </scroll-view>

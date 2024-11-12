@@ -4,6 +4,11 @@ page {
   display: flex;
   flex-direction: column;
 }
+
+.weui-navigation-bar__center text {
+  padding-left: 10px;
+}
+
 .scrollarea-x {
   flex: 1;
   overflow-y: hidden;
@@ -43,7 +48,7 @@ page {
 .group-reddot {
   width: 12px;
   height: 12px;
-  color: #fff;
+  color: #ffffff;
   position:absolute;
   z-index: 100;
   left: 68px;
@@ -60,7 +65,7 @@ page {
   background-color: #ffffff;
   color: rgb(53, 52, 52);
   font-weight: 600;
-  font-size: var(--notice-bar-font-size,15px);
+  font-size: var(--notice-bar-font-size,18px);
   padding: 0 0 0 6px;
   height:var(--notice-bar-height,40px);
 }
@@ -68,7 +73,7 @@ page {
 .group-message .van-notice-bar {
   background-color: #ffffff;
   color: #b6b3b3;
-  font-size: var(--notice-bar-font-size,13px);
+  font-size: var(--notice-bar-font-size,12px);
   height:var(--notice-bar-height,20px);
   padding: 0 0 0 6px;
 }
