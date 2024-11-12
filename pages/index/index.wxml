@@ -17,7 +17,7 @@
       <van-notice-bar
         scrollable="{{false}}"
         left-icon="info"
-        background="#eeeeee"
+        background="#f3f4f5"
         color="#7a7a7a"
         text="1.关注；   2.进粉丝群；   3.留意群消息"
       />
