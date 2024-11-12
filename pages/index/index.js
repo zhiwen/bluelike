@@ -95,11 +95,11 @@ Page({
         itm.imgUrl = utils.getRandomData(DSCityGroup.cityGroupAvatars);
       }
 
-      if (utils.isBlankString(itm.message)) {
-        var msg = utils.getRandomData(DSGroupInfo.groupInfo.messages);
-        var member = utils.getRandomData(DSGroupInfo.groupInfo.members);
-        itm.message = msg.replace("${name}", member);
-      }
+      // if (utils.isBlankString(itm.message)) {
+      var msg = utils.getRandomData(DSGroupInfo.groupInfo.messages);
+      var member = utils.getRandomData(DSGroupInfo.groupInfo.members);
+      itm.message = msg.replace("${name}", member);
+      // }
     })
     return filterGroupList;
   },
