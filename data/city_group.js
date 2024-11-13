@@ -2751,6 +2751,38 @@ var cityGroupList = [
     reddot: "",
     message: "",
     province: "65"
+  },
+  {
+    code: "50",
+    name: "重庆市",
+    province: "50",
+    imgUrl: "",
+    reddot: "",
+    message: ""
+  },
+  {
+    name: "台湾省",
+    code: "71",
+    province: "71",
+    imgUrl: "",
+    reddot: "",
+    message: ""
+  },
+  {
+    name: "香港",
+    code: "81",
+    province: "81",
+    imgUrl: "",
+    reddot: "",
+    message: ""
+  },
+  {
+    name: "澳门",
+    code: "82",
+    province: "82",
+    imgUrl: "",
+    reddot: "",
+    message: ""
   }
 ]
 
