@@ -189,9 +189,42 @@ var provinceList = [
 ]
 
 var provinceAvatars = [
-  "https://www.shopwind.net/static/images/w.jpg",
-  "https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/727788430/O1CN01yAzqpf2C8zoeRpuht_!!727788430.jpg_580x580q90.jpg_.webp",
-  "http://img.alicdn.com/img/i1/1163290200/O1CN01WSt2E71DLe7PTqPJl_!!0-saturn_solar.jpg_580x580q90.jpg_.webp"
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/7.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T0.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T1.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T11.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T12.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T13.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T14.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T15.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T16.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T18.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T19.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T2.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T20.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T21.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T22.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T23.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T24.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T25.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T26.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T27.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T28.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T29.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T3.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T30.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T31.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T32.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T33.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T34.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T35.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T36.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T4.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T5.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T6.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T7.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T8.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/province/T9.png"
 ]
 
 module.exports.provinceList = provinceList;

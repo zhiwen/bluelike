@@ -23,6 +23,26 @@ function getRandomData(arr) {
   return data;
 }
 
+function getFullyRandomData(len, array) {
+  const deduplicate = new Set();
+  var rndRange = array.length;
+  var limit = array.length - 1;
+
+  while(deduplicate.size <= len && deduplicate.size <= limit) {
+    var rndNum = generateRandomIdx(rndRange);
+    deduplicate.add(array[rndNum]);
+  }
+  /**
+   * There will increase to meet len elements if the array not full
+   */
+  var resultArray = Array.from(deduplicate);
+  while(resultArray.length < len) {
+    var rndNum = generateRandomIdx(rndRange);
+    resultArray.push(array[rndNum]);
+  }
+  return resultArray;
+}
+
 function arraySortingDesc(itm1, itm2) {
   var order1 = (itm1.order == undefined ? 0 : itm1.order);
   var order2 = (itm2.order == undefined ? 0 : itm2.order);
@@ -52,6 +72,7 @@ function arrayListPagination(arrayList, pageSize) {
 module.exports.isBlankString = isBlankString;
 module.exports.generateRandomIdx = generateRandomIdx;
 module.exports.getRandomData = getRandomData;
+module.exports.getFullyRandomData = getFullyRandomData;
 module.exports.arraySortingDesc = arraySortingDesc;
 module.exports.arrayListPagination = arrayListPagination;
 

@@ -2755,8 +2755,18 @@ var cityGroupList = [
 ]
 
 var groupAvatars = [
-  "https://img.alicdn.com/bao/uploaded/i2/240262345/O1CN01Z6OpH41TC3leT3udH_!!240262345.png_760x760q50.jpg_.webp",
-  "http://img.alicdn.com/img/i4/1591890147/O1CN010qxYxl1CxN6TGrjWT_!!0-saturn_solar.jpg_580x580q90.jpg_.webp"
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q1.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q2.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q3.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q4.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q5.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q6.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q7.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q8.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q9.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q10.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q11.png",
+  "https://cool-store-hsay.oss-cn-hangzhou.aliyuncs.com/test/images/group/Q12.png"
 ]
 
 module.exports.cityGroupList = cityGroupList,

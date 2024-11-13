@@ -60,9 +60,10 @@ Page({
 
   getPagedProvinceList: function () {
     var provinceList = DSProvince.provinceList;
-    provinceList.forEach(itm => {
+    var rndAvatarArr = utils.getFullyRandomData(provinceList.length, DSProvince.provinceAvatars);
+    provinceList.forEach((itm, idx) => {
       if (utils.isBlankString(itm.imgUrl)) {
-        itm.imgUrl = utils.getRandomData(DSProvince.provinceAvatars);
+        itm.imgUrl = rndAvatarArr[idx];
       }
     })
 
@@ -74,12 +75,14 @@ Page({
 
   getGroupList: function (provinceCode) {
     var filterGroupList = DSCityGroup.cityGroupList.filter(item => item.province == provinceCode);
-    filterGroupList.forEach((itm, idx) => {
-      // var newItm = { ...itm };
+    var groupLen = filterGroupList.length;
+    var rndMsgArr = utils.getFullyRandomData(groupLen, DSGroupInfo.groupInfo.messages);
+    var rndMemberArr = utils.getFullyRandomData(groupLen, DSGroupInfo.groupInfo.members);
 
+    filterGroupList.forEach((itm, idx) => {
       // 随机生成小红点
       if (utils.isBlankString(itm.reddot)) {
-        var rndIdx = utils.generateRandomIdx(filterGroupList.length / 2);
+        var rndIdx = utils.generateRandomIdx(groupLen / 2);
         itm.reddot = (idx <= 1 || (rndIdx % 2) == 0);
       }
 
@@ -95,11 +98,9 @@ Page({
         itm.imgUrl = utils.getRandomData(DSCityGroup.cityGroupAvatars);
       }
 
-      // if (utils.isBlankString(itm.message)) {
-      var msg = utils.getRandomData(DSGroupInfo.groupInfo.messages);
-      var member = utils.getRandomData(DSGroupInfo.groupInfo.members);
+      var msg = rndMsgArr[idx];
+      var member = rndMemberArr[idx];
       itm.message = msg.replace("${name}", member);
-      // }
     })
     return filterGroupList;
   },
